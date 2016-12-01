@@ -1,7 +1,7 @@
 var PMalbum = [
     {
         "src" : "https://c2.staticflickr.com/6/5514/30539248593_9e74efcd98_h.jpg",
-        "caption" : "Dundas West",
+        "caption" : "Honest Ed Alley",
         "width" : 1600,
         "height" : 929
     },
