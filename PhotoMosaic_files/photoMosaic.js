@@ -1,11 +1,35 @@
 var PMalbum = [
     {
+        "src" : "https://c2.staticflickr.com/6/5514/30539248593_9e74efcd98_h.jpg",
+        "caption" : "Dundas West",
+        "width" : 1600,
+        "height" : 929
+    },
+	{
+        "src" : "https://c1.staticflickr.com/9/8522/29003238130_3029f7ef92_h.jpg",
+        "caption" : "Dundas West",
+        "width" : 1600,
+        "height" : 864
+    },
+	{
+        "src" : "https://c2.staticflickr.com/6/5739/30635508216_95ee7253f8_h.jpg",
+        "caption" : "Leslieville",
+        "width" : 1600,
+        "height" : 939
+    },
+	{
         "src" : "https://c2.staticflickr.com/2/1484/24398335604_d1f35177ed_h.jpg",
         "caption" : "Leslieville",
         "width" : 1600,
         "height" : 973
     },
     {
+        "src" : "https://c1.staticflickr.com/9/8605/28423037172_74bf9203f3_h.jpg",
+        "caption" : "Queen Richmond Centre West",
+        "width" : 1600,
+        "height" : 973
+    },
+	{
         "src" : "https://c2.staticflickr.com/2/1524/24586028131_564897616b_b.jpg",
         "caption" : "Glass Tower",
         "width" : 1600,
