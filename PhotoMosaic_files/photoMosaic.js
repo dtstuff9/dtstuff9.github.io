@@ -48,10 +48,10 @@ var PMalbum = [
         "height" : 917
     },
     {
-        "src" : "https://c2.staticflickr.com/2/1679/23821184623_ba89a15bd1_b.jpg",
-        "caption" : "Rosedale Station",
-        "width" : 1024,
-        "height" : 683
+        "src" : "https://c1.staticflickr.com/9/8860/28658868635_b87afcfca0_h.jpg",
+        "caption" : "Bergeron Centre for Engineering Excellence",
+        "width" : 1600,
+        "height" : 1034
     },
     {
         "src" : "https://c2.staticflickr.com/8/7365/16505929126_9658cab40e_b.jpg",
