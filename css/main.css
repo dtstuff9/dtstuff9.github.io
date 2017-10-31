@@ -67,7 +67,7 @@ h2.post-title {
 
 .social-icon a {
   background: rgba(255, 255, 255, 0.85); /* social icon background color */
-  color: #000; /* social icon color */
+  color: #212121; /* social icon color */
 }
 
 .social-icon a:hover {
