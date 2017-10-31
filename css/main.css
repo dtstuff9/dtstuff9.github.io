@@ -1,0 +1,909 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    background-color: #212121;
+}
+
+h1.post-title,
+h2.post-title {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.container{
+    color: #ffffff;
+}
+
+.inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 300;
+}
+
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top, #212121 0%, #222 100%);
+  background-image:      -o-linear-gradient(top, #212121 0%, #222 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#212121), to(#222));
+  background-image:         linear-gradient(to bottom, #212121 0%, #222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #ffffff;
+}
+
+.jumbotron  .container{
+    color: #000000;
+}
+
+.social-icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li{
+  display: inline-block;
+  text-align: center;
+}
+
+.social-icon a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.social-icon a {
+  background: rgba(255, 255, 255, 0.85); /* social icon background color */
+  color: #000; /* social icon color */
+}
+
+.social-icon a:hover {
+  background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
+  color: #fff; /* social icon hover color */
+}
+
+.footer {
+  bottom: 0;
+  padding-top: 5px;
+  width: 100%;
+  height: 50px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	Modal
+/*-----------------------------------------------------------------------------------*/
+.modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    border: 0;
+    color: #FFF;
+    padding: 10px 0;
+}
+.modal-transparent {
+    background: transparent;
+}
+.modal-transparent .modal-content {
+    background: transparent;
+}
+.modal-backdrop.modal-backdrop-transparent {
+    background: #ffffff;
+}
+.modal-backdrop {
+    background: rgba(30, 30, 30, 0.93);
+}
+.modal-backdrop.in {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.modal .btn.close-button {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    padding: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    background: none !important;
+    border: 0 !important;
+    margin: 0;
+    margin-left: -19px;
+    font-weight: normal;
+    z-index: 1;
+}
+.modal .btn.close-button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+.modal .btn.close-button:before {
+    font-family: "Ionicons";
+    content: '\f2d7';
+    padding: 0;
+    letter-spacing: normal;
+}
+.modal-backdrop {
+    -webkit-backface-visibility: hidden;
+}
+.modal-backdrop.unfold-3d {
+    perspective: 500;
+}
+.modal.move-from-top .modal-dialog {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(50px);
+}
+.modal.in .modal-dialog {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	11. THUMBNAIL OVERLAY
+/*-----------------------------------------------------------------------------------*/
+
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+figure img {
+    display: inline;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+figure img.img-auto {
+    width: auto;
+}
+figure a .text-overlay {
+    opacity: 1;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), color-stop(55%, rgba(30, 30, 30, 0.15)), color-stop(85%, rgba(30, 30, 30, 0.7)), to(rgba(30, 30, 30, 0.8)));
+    background-image: -webkit-linear-gradient(transparent 0%, transparent 50%, rgba(30, 30, 30, 0.15) 55%, rgba(30, 30, 30, 0.7) 85%, rgba(30, 30, 30, 0.8) 100%);
+    background-image: linear-gradient(transparent 0%, transparent 50%, rgba(30, 30, 30, 0.15) 55%, rgba(30, 30, 30, 0.7) 85%, rgba(30, 30, 30, 0.8) 100%);
+    transition: all 0.5s ease-out;
+    text-align: left;
+}
+figure a .text-overlay .info {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 30px;
+    right: 30px;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.tiles.blog figure a .text-overlay .info {
+    text-align: left;
+}
+.tiles.blog figure a .text-overlay .info p {
+    color: #FFF;
+}
+figure a .text-overlay .info .post-title {
+    color: #FFF;
+    margin: 0;
+    font-size: 18px;
+}
+.tiles.blog figure a .text-overlay .info .post-title {
+    margin-bottom: 10px;
+}
+.tiles.blog figure.overlay a .over span {
+    display: none !important;
+}
+figure a .text-overlay .info .meta {
+    color: #cdcdcd;
+}
+.overlay a .over {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    max-width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.6);
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.overlay a .over span {
+    background: #FFF;
+    height: 26px;
+    position: absolute;
+    width: 2px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    margin-left: -1px;
+    margin-top: -13px;
+}
+.overlay a .over span:after {
+    background: #FFF;
+    content: "";
+    height: 2px;
+    left: -12px;
+    position: absolute;
+    top: 12px;
+    width: 26px;
+}
+.overlay.small a .over span {
+    height: 20px;
+    width: 2px;
+    margin-top: -10px;
+}
+.overlay.small a .over span:after {
+    height: 2px;
+    left: -9px;
+    top: 9px;
+    width: 20px;
+}
+.overlay a:hover .over {
+    opacity: 1
+}
+.overlay a:hover .text-overlay .info {
+    -webkit-transform: none;
+    transform: none;
+}
+.overlay.instagram a .over span {
+    width: auto;
+    height: auto;
+    font-size: 35px;
+    color: #FFF;
+    opacity: 0.7;
+    margin-left: -14px;
+    margin-top: -14px;
+    background: none;
+}
+.overlay.instagram a .over span:after {
+    content: "\f351";
+    font-family: "Ionicons";
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    background: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	13. TILES
+/*-----------------------------------------------------------------------------------*/
+
+.row-offset-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.row-offset-0 > [class*="col-"],
+.row-offset-0 .row-same-height > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.tiles .items:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.tiles {
+    margin: 0 -10px -10px 0;
+    overflow: hidden;
+}
+.tiles .item {
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px !important;
+}
+.tiles .item {
+    height: auto
+}
+.tiles .item figure {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+}
+.tiles .item figure img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+/*-----------------------------------------------------------------------------------*/
+/* 	14. BASIC GALLERY
+/*-----------------------------------------------------------------------------------*/
+
+.basic-gallery {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.basic-gallery li {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+.basic-gallery li:first-child {
+    margin-top: 0
+}
+.basic-gallery li img {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+}
+.modal .basic-gallery li img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*-----------------------------------------------------------------------------------*/
+/*	24. DIVIDERS
+/*-----------------------------------------------------------------------------------*/
+
+.divide0 {
+    width: 100%;
+    height: 0px;
+}
+.divide2 {
+    width: 100%;
+    height: 2px;
+}
+.divide3 {
+    width: 100%;
+    height: 3px;
+}
+.divide5 {
+    width: 100%;
+    height: 5px;
+}
+.divide10 {
+    width: 100%;
+    height: 10px;
+}
+.divide15 {
+    width: 100%;
+    height: 15px;
+}
+.divide20 {
+    width: 100%;
+    height: 20px;
+}
+.divide25 {
+    width: 100%;
+    height: 25px;
+}
+.divide30 {
+    width: 100%;
+    height: 30px;
+}
+.divide35 {
+    width: 100%;
+    height: 35px;
+}
+.divide40 {
+    width: 100%;
+    height: 40px;
+}
+.divide45 {
+    width: 100%;
+    height: 40px;
+}
+.divide50 {
+    width: 100%;
+    height: 50px;
+}
+.divide55 {
+    width: 100%;
+    height: 55px;
+}
+.divide60 {
+    width: 100%;
+    height: 60px;
+}
+.divide65 {
+    width: 100%;
+    height: 65px;
+}
+.divide70 {
+    width: 100%;
+    height: 70px;
+}
+.divide75 {
+    width: 100%;
+    height: 75px;
+}
+.divide80 {
+    width: 100%;
+    height: 80px;
+}
+.divide85 {
+    width: 100%;
+    height: 85px;
+}
+.divide90 {
+    width: 100%;
+    height: 90px;
+}
+.divide100 {
+    width: 100%;
+    height: 100px;
+}
+.rm0 {
+    margin-right: 0px
+}
+.rm1 {
+    margin-right: 1px
+}
+.rm2 {
+    margin-right: 2px
+}
+.rm5 {
+    margin-right: 5px
+}
+.rm6 {
+    margin-right: 6px
+}
+.rm10 {
+    margin-right: 10px
+}
+.rm15 {
+    margin-right: 15px
+}
+.rm20 {
+    margin-right: 20px
+}
+.rm25 {
+    margin-right: 25px
+}
+.rm30 {
+    margin-right: 30px
+}
+.rm40 {
+    margin-right: 40px
+}
+.rm50 {
+    margin-right: 50px
+}
+.lm0 {
+    margin-left: 0px
+}
+.lm1 {
+    margin-left: 1px
+}
+.lm5 {
+    margin-left: 5px
+}
+.lm7 {
+    margin-left: 7px
+}
+.lm10 {
+    margin-left: 10px
+}
+.lm15 {
+    margin-left: 15px
+}
+.lm20 {
+    margin-left: 20px
+}
+.lm25 {
+    margin-left: 25px
+}
+.lm30 {
+    margin-left: 25px
+}
+.lm40 {
+    margin-left: 40px
+}
+.rp5 {
+    padding-right: 5px
+}
+.rp10 {
+    padding-right: 10px
+}
+.rp15 {
+    padding-right: 15px
+}
+.rp20 {
+    padding-right: 20px
+}
+.rp25 {
+    padding-right: 25px
+}
+.rp30 {
+    padding-right: 30px
+}
+.rp40 {
+    padding-right: 40px
+}
+.rp50 {
+    padding-right: 50px
+}
+.lp0 {
+    padding-left: 0px
+}
+.lp5 {
+    padding-left: 5px
+}
+.lp10 {
+    padding-left: 10px
+}
+.lp15 {
+    padding-left: 15px
+}
+.lp20 {
+    padding-left: 20px
+}
+.lp25 {
+    padding-left: 25px
+}
+.lp30 {
+    padding-left: 30px
+}
+.lp35 {
+    padding-left: 35px
+}
+.lp40 {
+    padding-left: 40px
+}
+.lp50 {
+    padding-left: 50px
+}
+.lp100 {
+    padding-left: 100px
+}
+.tp0 {
+    padding-top: 0 !important
+}
+.tp3 {
+    padding-top: 3px
+}
+.tp5 {
+    padding-top: 5px
+}
+.tp10 {
+    padding-top: 10px
+}
+.tp20 {
+    padding-top: 20px
+}
+.tp25 {
+    padding-top: 25px
+}
+.tp30 {
+    padding-top: 30px
+}
+.tp40 {
+    padding-top: 40px
+}
+.tp50 {
+    padding-top: 50px
+}
+.tp60 {
+    padding-top: 60px
+}
+.tm4 {
+    margin-top: 4px
+}
+.tm5 {
+    margin-top: 5px
+}
+.tm7 {
+    margin-top: 7px
+}
+.tm10 {
+    margin-top: 10px
+}
+.tm15 {
+    margin-top: 15px
+}
+.tm20 {
+    margin-top: 20px
+}
+.tm40 {
+    margin-top: 40px
+}
+.mbm1 {
+    margin-bottom: -1px
+}
+.bp0 {
+    padding-bottom: 0 !important
+}
+.bp10 {
+    padding-bottom: 10px !important
+}
+.bp20 {
+    padding-bottom: 20px !important
+}
+.bm0 {
+    margin-bottom: 0 !important
+}
+.bm5 {
+    margin-bottom: 5px !important
+}
+.bm6 {
+    margin-bottom: 6px !important
+}
+.bm10 {
+    margin-bottom: 10px !important
+}
+.bm15 {
+    margin-bottom: 15px !important
+}
+.bm20 {
+    margin-bottom: 20px !important
+}
+.bm25 {
+    margin-bottom: 25px !important
+}
+.bm30 {
+    margin-bottom: 30px !important
+}
+.bm40 {
+    margin-bottom: 40px !important
+}
+.bm50 {
+    margin-bottom: 50px !important
+}
+.bp50 {
+    padding-bottom: 50px !important
+}
+/*-----------------------------------------------------------------------------------*/
+/*	25. RESPONSIVE
+/*-----------------------------------------------------------------------------------*/
+
+@media (min-width: 1271px) {
+    .banner--clone {
+        display: none;
+    }
+    .navbar .container-fluid,
+    .navbar .navbar-collapse {
+        padding: 0;
+    }
+    .navbar .navbar-right {
+        margin-right: 0;
+    }
+    .navbar .nav > li > a {
+        padding-right: 35px;
+    }
+    .navbar-header {
+        padding: 0 35px;
+    }
+    .navbar-left:not(.banner--clone) {
+        position: fixed;
+        width: 240px;
+        height: 100%;
+        background-color: #f3f3f3;
+    }
+    .navbar-header-left {
+        margin: 50px 0 35px 0;
+        width: 100%;
+        text-align: right;
+        padding: 0 35px;
+    }
+    .side-body {
+        margin-left: 240px;
+    }
+    .navbar-footer {
+        display: block;
+        padding: 0 35px;
+    }
+    .sub-menu > a:before {
+        display: inline;
+    }
+    .navbar .navbar-collapse {
+        float: right;
+        position: relative;
+        right: 0;
+    }
+    .navbar .navbar-nav {
+        float: none;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 !important;
+    }
+    .navbar .navbar-nav > li {
+        margin: 0;
+        display: inline-block;
+    }
+    .navbar .dropdown-menu {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background: #f3f3f3;
+    }
+    .navbar .navbar-nav > li .dropdown-menu {
+        border-left: 2px solid #000000;
+    }
+    .navbar .dropdown-menu li a {
+        padding: 3px 20px
+    }
+    .navbar-nav ul ul {
+        padding-top: 5px !important;
+        padding-left: 2px !important;
+        left: 2px !important;
+    }
+    .navbar-nav ul ul ul {
+        padding-left: 5px !important
+    }
+    .navbar-nav ul ul li {} .navbar.classic .container {
+        display: table;
+        vertical-align: middle;
+    }
+    .navbar.classic .navbar .navbar-nav {
+        float: none;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 !important;
+    }
+    .navbar.classic .navbar-header {
+        display: table;
+        position: relative;
+    }
+}
+@media (max-width: 1270px) {
+    .navbar:not(.banner--clone) {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07) !important;
+    }
+    .banner--clone {
+        position: fixed;
+        z-index: 1039;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+    .banner--stick {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        background: rgba(255, 255, 255, 0.85) !important;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07) !important;
+    }
+    .navbar:not(.banner--clone) .navbar-collapse {
+        position: absolute;
+        width: 100%;
+    }
+    .navbar .container {
+        width: 100%;
+        padding: 0;
+    }
+    .navbar .navbar-header {
+        padding: 0 30px;
+    }
+    .navbar .navbar-header .navbar-brand {
+        width: 100%
+    }
+    .navbar .dropdown-menu {
+        padding-left: 20px
+    }
+    .navbar .navbar-nav > li {
+        margin: 0 30px
+    }
+    .navbar-nav > li > a,
+    .navbar .dropdown-menu li a,
+    .navbar .dropdown-menu li a:hover,
+    .navbar .dropdown-menu li a.active {
+        padding: 7px 0px !important
+    }
+    .navbar .navbar-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .list-view figure {
+	    margin-bottom: 20px;
+    }
+    [class*="col-"][class*="lp"] {
+        padding-left: 15px;
+    }
+    [class*="col-"][class*="rp"] {
+        padding-right: 15px
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar .navbar-header {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navbar-header.visible-sm {
+        display: table !important;
+    }
+    [class*="divide"].visible-sm {
+        clear: both;
+    }
+    .grid-view.blog-content hr,
+    .grid-view .blog-content hr {
+        display: block !important
+    }
+    
+}
+@media (max-width: 767px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .navbar .navbar-nav > li {
+        margin: 0 20px
+    }
+    .navbar .navbar-header {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    footer [class*="col-"] {
+        margin-bottom: 30px
+    }
+    [class*="col-"] {
+        margin-bottom: 30px
+    }
+    .form-container [class*="col-"] {
+        margin-bottom: 0
+    }
+    .tiles .col-xs-6 {
+        width: 100%
+    }
+    .sidebar {
+        padding-left: 15px !important
+    }
+    .blog .sidebar {
+        margin-top: 60px
+    }
+    .classic-view .post {
+        margin-bottom: 60px
+    }
+    #comments .user {
+        display: none
+    }
+    #comments .message-inner {
+        margin-left: 0
+    }
+    #comments ul.children {
+        padding: 0 0 0 25px
+    }
+    .banner--stick {
+        display: none !important
+    }
+    .about-author {
+        position: relative;
+        padding: 0;
+    }
+    .about-author .author-image {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .post-nav-wrapper .post-nav {
+        width: 100% !important;
+        text-align: left !important;
+        padding: 0 !important;
+        display: block !important;
+        border: 0 !important;
+    }
+    .list-view figure {
+	    margin-bottom: 20px;
+    }
+    .grid-view.blog-content hr,
+    .grid-view .blog-content hr {
+        display: block !important
+    }
+    .hidden {display:none;}
+}
