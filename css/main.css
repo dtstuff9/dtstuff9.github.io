@@ -125,6 +125,12 @@ h2.post-title {
 .modal .btn.close-button:hover {
     color: rgba(255, 255, 255, 1) !important;
 }
+.modal .btn.close-button:before {
+    font-family: "FontAwesome";
+    content: '\f00d';
+    padding: 0;
+    letter-spacing: normal;
+}
 .modal-backdrop {
     -webkit-backface-visibility: hidden;
 }
@@ -262,6 +268,15 @@ figure a .text-overlay .info .meta {
     opacity: 0.7;
     margin-left: -14px;
     margin-top: -14px;
+    background: none;
+}
+.overlay.instagram a .over span:after {
+    content: "\f351";
+    font-family: "Ionicons";
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
     background: none;
 }
 /*-----------------------------------------------------------------------------------*/
